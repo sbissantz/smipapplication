@@ -8,7 +8,10 @@
 
 \usepackage{amsmath}
 \usepackage{amssymb}
+
 \usepackage{enotez}
+
+\usepackage[final]{microtype}
 
 \title{The Rotation Problem}
 \shorttitle{The Rotation Problem}
@@ -41,7 +44,7 @@ often poorly understood alternatives to rotate in EFA.}
 \begin{document}
 \maketitle
 
-Extracting factors using Maximum Likelihood Factor Analysis (MLFA)
+Extracting factors using Maximum Likelihood Factor Analysis (\textsc{Mlfa})
 yields--conditional on the data--the most plausible values for the above
 reproduction problem. But there is usually a concern with the proposed loading
 matrix. Even though the result suffices for factor-analytic robots, it is not
@@ -62,12 +65,12 @@ various implementations to come close to the ideal. Some of them are part of
 the following sections.}.
 
 Transformation overcomes the problem. A transformation of the loading matrix is
-visually referred to as \textsc{rotation}. Rotations function as interpretation
+visually referred to as \textsc{Rotation}. Rotations function as interpretation
 aids for researchers trying to produce unambiguous loading pictures while
 maintaining the extracted relationships between variables in the result. Their
 outcome usually leads to a clear overall picture of the factor-item
-correlations ($\hat\Lambda_r$). Ultimately, rotations foster clarity by
-facilitating a broader understanding of the loading pattern.
+correlations. Ultimately, rotations foster clarity by facilitating a broader
+understanding of the loading pattern.
 
 The simpler (i.\,e., more interpretable) structure can be achieved in two ways;
 research can either utilize orthogonal or oblique rotation techniques. Both
@@ -79,19 +82,18 @@ perspectives.
 To get an idea of what it means to rotate, imagine a Cartesian coordinate
 system (\autoref{fig:facord}). For ease of sake, imagine the space is
 two-dimensional. With two dimensions, there are two axes $X$ and $Y$. Rename
-$X$ and $Y$ using the labels of the previous MLFA-result, for instance,
+$X$ and $Y$ using the labels of the previous \textsc{Mlfa}-result, for instance,
 \enquote{honor} and \enquote{pride}. In addition, restrict the range of values
 for $X$ and $Y$ to stay within the one-minus-one interval. Why minus one to
 one? Because the items are now defined in terms of their loadings and loadings,
 in turn, are factor-item \textit{correlations}. Let’s say the item \enquote{You
-would praise a man who acts aggressively to insult} is located at $I:
-(0.5,0.6)$. If the values 0.5 and 0.6 represent the item’s correlations with
-each factor ($\hat{\lambda}_{honor}$; $\hat{\lambda}_{pride}$), one can
-plausible assume \enquote{You would praise a man who acts aggressively to
-insult} correlates moderately to highly with \enquote{honor} and highly with
-\enquote{pride}. Generalizing this logic, one can map the entire loading matrix
-($\hat{\Lambda}$) can be mapped into a two-dimensional. The factor-item
-correlations became factor coordinates.
+would praise a man who acts aggressively to insult} is located at
+$I:(0.5,0.6)$. If the values 0.5 and 0.6 represent the item’s correlations with
+each factor, one can plausible assume \enquote{You would praise a man who acts
+aggressively to insult} correlates moderately to highly with \enquote{honor}
+and highly with \enquote{pride}. Generalizing this logic, one can map the
+entire loading matrix into the two-dimensional coordinate system. The
+factor-item correlations become factor coordinates.
 
 \begin{figure*}[htb]
 \center
@@ -113,25 +115,25 @@ How to reallocate the axis in the coordinate system to generate the desired
 simple(r) loading structure? The researcher has two choices: First, to
 \enquote{spin the axes}, using orthogonal rotation techniques, or to apply an
 oblique transformation. Both methods differ in adaptability to the object under
-investigation (OUI) in the social sciences. While orthogonal rotations maintain
+investigation (\textsc{Oui}) in the social sciences. While orthogonal rotations maintain
 the right angle between the factor axes, transformation allows them to move
 independently. The latter implies that the factors are allowed to correlate,
 which will become a significant detail hereafter.
 
 Let's pick up on understanding orthogonal and oblique techniques first. With
-\textsc{orthogonal rotation} the elementary question is how to reallocate the
+\textsc{Orthogonal rotation} the elementary question is how to reallocate the
 axis that a simple (i.\,e., easy-to-interpret) loading-structure results. To
 give an analogy, think of a spinning rotor. The rotor as a whole represents the
-factor-coordinate system. The bolt (i.e., the origin) holds the rotor in place
-so that the blades (i.e., the axes) can spin. When the rotor blades turn, they
+factor-coordinate system. The bolt (i.\,e., the origin) holds the rotor in place
+so that the blades (i.\,e., the axes) can spin. When the rotor blades turn, they
 maintain a fixed 90-degree angle. The same holds for factor rotation. If the
 axes in a factor-coordinate system turn, the blades move counterclockwise,
 preserving the right angle. Mainly, one refers to the procedure as
-\enquote{orthogonal rotation}. The metaphor breaks, however, in the oblique
-case. Here, one does not spin the axes, preserving the right angle between
+\enquote{orthogonal rotation}. The metaphor breaks, however, with \textsc{Oblique
+rotations}. Here, one does not spin the axes, preserving the right angle between
 them. The crux is to allow the axis to abandon perpendicularity explicitly.
 Intuitively, one should think of the two-dimensional oblique case as a clock
-(i.e., a factorial coordinate system) in which the hands (i.e., the factors)
+(i.\,e., a factorial coordinate system) in which the hands (i.\,e., the factors)
 move independently. Thus, the “time” becomes substantial (i.\,e., the angle
 between the factors). It corresponds to an additional piece of information: the
 between-factor correlations.
@@ -140,7 +142,7 @@ Second, the link between graphical rotation and matrix algebra should become
 clear. While a visual overview is helpful to get started, it makes it difficult
 to fully grasp the comprehensive modeling approach. The fact holds especially
 for modern oblique techniques. To distinguish the graphical and algebraic
-approach the term \enquote{oblique transformation} \parencite{Revelle2021} will
+approach the term \textsc{Oblique transformation} \parencite{Revelle2021} will
 be used. With the preliminaries set, one question remains for the following
 section: What happens inside the machinery of the factorial robot? Let’s switch
 perspectives to get right under the hood.
@@ -153,6 +155,7 @@ upon the \textsc{Transformation equation}, formalizing as:
 
 \begin{equation}
 \hat{\Lambda}_r = \hat{\Lambda} {T}
+\label{eq:transform}
 \end{equation}
 
 Notice that the equation is just a formalized version of the issue outlined
@@ -163,18 +166,18 @@ reason is that the relationships between variables are left untouched. More
 technically, the robot searches a transformation matrix (${T}$) rearranging the
 estimated information ($\hat{\Lambda}$) but leaving the model’s fit to the data
 untouched \parencite{Mair2018}. In this light, the formal equivalent of
-spinning the axis is a multiplication with a transformation matrix (${T}$).
-Consequently, the transformation matrix qualifies as the pivot point in the
-transformation equation. It is key to understand transformation procedures.
-Developing an understanding of the transformation next will answer the question
-of what happens inside the machinery.
+spinning the axis is a multiplication with this matrix (${T}$). Consequently,
+the transformation matrix qualifies as the pivot point in aboves equation. It
+is key to understand transformation procedures. Developing an understanding of
+the transformation next will answer the question of what happens inside the
+machinery.
 
 In the orthogonal case, to multiply the plotted matrix of factor loadings
 ($\hat{\Lambda}$) with a transformation matrix ($T$), moves the axes
 counterclockwise until the desired result ($\hat{\Lambda}_r$) is reached.
 Thereby, the robot searches for a solution with two properties: Obviously, the
-transformation ($T$) needs to solve the transformation problem
-($\hat{\Lambda}_r = \hat{\Lambda} {T}$). But even more important is the premise
+transformation needs to solve the transformation problem
+(\autoref{eq:transform}). But even more important is the premise
 of preserving the right angle between the factors. The crux is to employ a set
 of orthogonal vectors because they preserve the right angle -- rotating the
 factors (counterclockwise) by 90 degrees. In mathematical terms, assuming
@@ -230,15 +233,15 @@ To solve the rotation problem, researchers have two options \endnote{Since the
   \textcite[p. 202]{Gorsuch2015}. To combine the best of both worlds, nowadays,
 analytic criteria predominate, which orient towards providing a mathematical
 gateway to a simple structure}: orthogonal rotation and oblique transformation.
-When it comes down to deciding on a particular one, they should critically
+When it comes down to deciding on a particular one, researchers should critically
 evaluate if it is reasonable to ignore the between-factor correlations. The
-basis of their decision must be the correspondence with the OUI. Researchers
+basis of their decision must be the correspondence with the \textsc{Oui}. Researchers
 have to internalize that their decision has inevitable consequences on their
 inferences. Orthogonal rotation keeps the perpendicularity of the factor axes
 -- another appearance of factor independence. \textit{The decision between
-  orthogonal and oblique rotations has a profound effect on the OUI. I would
-argue that it is much stronger than selecting within the sphere of rotation
-criteria}. 
+  orthogonal and oblique rotations has a profound effect on the \textsc{Oui}. I
+would argue that it is much stronger than selecting within the sphere of
+rotation criteria}. 
 
 To highlight the conclusion structurally, all criteria are nested regarding
 their origins in the following sections (i.\,e., orthogonal rotation or oblique
@@ -251,7 +254,7 @@ part of the following sections.
 
 Among orthogonal rotation techniques like \textsc{Quartimax}
 \parencite{Carroll1953}, \textsc{Equamax} (Saunders, 1962) , and
-\textsc{Qrthomax} \parencite{Harman1970}; \textsc{Varimax}
+\textsc{Orthomax} \parencite{Harman1970}; \textsc{Varimax}
 \parencite[]{Kaiser1958} is the most popular choice in applied research
 \parencite{Costello2005, Ford1986, Loo1979}.
 
@@ -282,10 +285,10 @@ independence.
 
 However, there is usually no reason for the researcher to assume the
 independence of factors -- especially not by default.
-\textcite[p.3]{Costello2005} urges furthermore to expect variation among
+\textcite[p. 3]{Costello2005} urges furthermore to expect variation among
 factors because \enquote{behavior is rarely partitioned into neatly packaged
 units that function independently of one another}. The quote should sound
-familiar, recalling the characteristic features of the OUI (e.\,g., its blurry
+familiar, recalling the characteristic features of the \textsc{Oui} (e.\,g., its blurry
 boundaries). Latent dimensions nearly always share some bits of information.
 Accessing them through independent factors is a recipe for doom, inducing
 ignorance bias \parencite{Loo1979}. The finding is in line with
@@ -307,14 +310,14 @@ transferring the initial robot's results into something simple (i.\,e., easy to
 understand). To judge simplicity among criteria, simplicity indexes come into
 play \parencite[see, e.\,g.][]{Bentler1977, Kaiser1974, Lorenzo-Seva2003}.
 Although they differ in terms of their mathematical formulation, conceptually
-\textsc{simplicity indexes} aim to find a solution with each item indicating
+\textsc{Simplicity indexes} aim to find a solution with each item indicating
 the least number of factors. In this sense, simplifying the result maximizes
 interpretability.
 
 The reason to use one of the most popular oblique transformation procedures,
-like \textsc{oblimn} and \textsc{promax} \parencite{Hendrickson1964} is
+like \textsc{Oblimn} and \textsc{Promax} \parencite{Hendrickson1964} is
 twofold. The first argument is their correspondence with the object under
-investigation (OUI) in the social sciences. The second is that they score high
+investigation (\textsc{Oui}) in the social sciences. The second is that they score high
 on one of the above's simplicity criteria. It seems like a win-win situation.
 On the one hand, all solutions aim to maximize factor simplicity; on the other,
 they avoid factor independence. So all of them are decent alternatives. But
@@ -331,36 +334,36 @@ simplicity, in turn, focuses solely on the values of the loadings directly.
 
 So what is the high-performance rotation criterion according to the more
 accurate loading simplicity (LS) index?
-\textsc{simplimax}\parencite{Kiers1994}. In \textcite{Lorenzo-Seva2003}'s
+\textsc{Simplimax} \parencite{Kiers1994}. In \textcite{Lorenzo-Seva2003}'s
 simulation study the criterion not only outperformed more elaborate versions of
-\textsc{oblimin} and \textsc{promax}. \textcite{Lorenzo-Seva2003} furthermore
-demonstrated the \textsc{simplimax} algorithm delivers a transformation matrix
+\textsc{Oblimin} and \textsc{Promax}. \textcite{Lorenzo-Seva2003} furthermore
+demonstrated the \textsc{Simplimax} algorithm delivers a transformation matrix
 pooling the communality of each item on the fewest number of factors. So the
 rotated loading pattern is indeed as simple as possible. The factor-loadings
 are either zero or as far from zero as doable \endnote{The workhorse in
 \textcite{Kiers1994}'s algorithm is $\sigma(T,\Lambda_r) = || \Lambda T -
 \Lambda_r ||^2$, with pattern matrix ${\Lambda}$, transformation ${T}$, and
-target ${\Lambda}_r$. The crux is to find the so-called \textsc{best simple
+target ${\Lambda}_r$. The crux is to find the so-called \textsc{Best simple
 target}, which means to solve for a transformation (${T}$) that allows rotating
 the pattern matrix ${\Lambda}$, such that the rotated matrix (${\Lambda}_r$)
 has a given number ($p$) of zero entries (see: \textcite{Kiers1994} for more
 details).}. 
 
-In conclusion, \textsc{simplimax} is the most decent alternative for two
+In conclusion, \textsc{Simplimax} is the most decent alternative for two
 reasons. Given the LS-index, it proved to deliver the simplest (i.\,e., most
 interpretable) solution possible while keeping track of the characteristic
-features of the OUI.
+features of the \textsc{Oui}.
 
 \subsection{Research recommendations}
 
-To sum up: \textit{The decision between orthogonal and oblique methods is
-weightier than choosing a particular criterion}. Concerning the object under
-investigation, oblique transformations prove a better standard for applied
-researchers. Factor independence is an exertion rather than the rule, and
-oblique rotations allow modeling factor dependencies explicitly. They permit
-factors to correlate with one another while still simplifying the patterns in
-the loading matrix as much as possible. Oblique transformations do no harm the
-OUI. With orthogonal rotation, the same is not unconditionally true.
+\textit{The decision between orthogonal and oblique methods is weightier than
+choosing a particular criterion}. Concerning the object under investigation,
+oblique transformations prove a better standard for applied researchers. Factor
+independence is an exertion rather than the rule, and oblique rotations allow
+modeling factor dependencies explicitly. They permit factors to correlate with
+one another while still simplifying the patterns in the loading matrix as much
+as possible. Oblique transformations do no harm the \textsc{Oui}. With orthogonal
+rotation, the same is not unconditionally true.
 
 Despite their shortcoming, orthogonal rotations are a common choice in the
 social sciences. Smuggling additional information into an exploratory
@@ -397,11 +400,11 @@ methods and the object under investigation. The bottom line is to find the most
 simple result possible. But researchers must avoid the current practice of
 finding simplicity at any cost.
 
-Orthogonal rotations are not worthless in applied social-science research.
+Again, orthogonal rotations are not worthless in applied social-science research.
 Researchers can use them strategically. For example, to highlight the added
 value of resolving to assume independence. Research should become experimental,
 trying different techniques and evaluating their scientific use by learning
-from model differences and similarities \parencite[p.642]{Tabachnick2007}. No
+from model differences and similarities \parencite[p. 642]{Tabachnick2007}. No
 matter if results are equal across trials or completely different, in an
 exploratory stage of the investigation, every finding is valuable information
 about the models and how they see the data. That information should never be
@@ -413,21 +416,21 @@ report them to improve domain knowledge.
 There are scenarios in which orthogonal solutions are a reasonable choice. For
 example, if compressing information more fully is prior. The small additive
 thus guides the application of orthogonal rotation techniques for practical
-researchers. In general, \textsc{varimax} is reasonable if factor dependence is
+researchers. In general, \textsc{Varimax} is reasonable if factor dependence is
 a minor issue or if the researcher expects more than a single general factor to
 underlay a set of items \parencite[p. 195]{Gorsuch2015}. But if the researcher
-anticipates a single factor, \textsc{varimax} becomes problematic. Why? Because
+anticipates a single factor, \textsc{Varimax} becomes problematic. Why? Because
 it distributes the variance across factors and thus dampens the tendency of a
 single factor to occur in the result \parencite{Sass2010}. As a result, if the
-researcher anticipates a single general factor, \textsc{quartimax} is the
-better choice \parencite{Mair2018}. Despite that \textsc{equamax}, combines
-\textsc{quartimax} and \textsc{varimax}, portioning the variance more evenly
+researcher anticipates a single general factor, \textsc{Quartimax} is the
+better choice \parencite{Mair2018}. Despite that \textsc{Equamax}, combines
+\textsc{Quartimax} and \textsc{Varimax}, portioning the variance more evenly
 across factors \parencite[p. 214]{Gorsuch2015}. If it comes down to a single
 choice for a particular criterion, \textcite{Gorsuch2015} recommends
-\textsc{varimax} because, in visual inspections, they produce interpretable
+\textsc{Varimax} because, in visual inspections, they produce interpretable
 results and prove invariant across a wide range of circumstances.
 
-The second add-on is devoted to the \textsc{gesture of proposing}. In applied
+The second add-on is devoted to the \textsc{Gesture of proposing}. In applied
 research, dimensionality analysis is often thought of and taught as if there
 has to be a definitive result. But especially in the early stages of
 exploratory investigations, there might be more than one plausible solution
