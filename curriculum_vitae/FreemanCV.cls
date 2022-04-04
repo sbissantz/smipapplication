@@ -81,6 +81,7 @@
 	BoldItalicFont=*-BoldItalic.ttf,
 	ItalicFont=*-Italic.ttf,
 	SmallCapsFont=*-SC.ttf
+	%SmallCapsFont=eb-garamond.smallcaps-08-regular.ttf
 ]
 
 % The sans serif font used explicitly with \textsf{}\sffamily
@@ -146,7 +147,9 @@
 
 \definecolor{text}{HTML}{2b2b2b} % Main document text color, off-black
 \definecolor{headings}{HTML}{701112} % Dark red color for headings
-\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+%\definecolor{shade}{HTML}{dddeed}
+\definecolor{shade}{HTML}{e0e1ee}
+
 \definecolor{linkcolor}{HTML}{641c1d} % 25% desaturated headings color for links
 
 \color{text} % Set the default text color
