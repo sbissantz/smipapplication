@@ -1,0 +1,202 @@
+%------------------------------------------------------------------------------
+% A customized version of Vel's interpretation of the...
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 3.0 (September 3, 2021)
+% see: https://www.LaTeXTemplates.com
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+% Preamble
+%------------------------------------------------------------------------------
+\documentclass[10pt]{FreemanML}
+
+% Widths of the two columns, specified here as a ratio summing to 1 to
+% correspond to percentages; adjust as needed for your content 
+\columnratio{0.55, 0.45} 
+
+\usepackage{csquotes}
+\usepackage{lettrine}
+\usepackage{framed}
+\usepackage[singlespacing]{setspace}
+%\usepackage{graphicx}
+%\usepackage[export]{adjustbox}
+
+% Headers and footers can be added with the following commands: \lhead{},
+% \rhead{}, \lfoot{} and \rfoot{}
+
+\lfoot{\footnotesize{The \LaTeX code to reproduce the CV and a free PDF Version is available at: \url{https://github.com/sbissantz/smip_application/curriculum_vitae}.}}
+
+%------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin two-column mode
+
+%------------------------------------------------------------------------------
+%	YOUR NAME AND CURRICULUM VITAE TITLE
+%----------------------------------------------------------------------------------------
+
+\parbox[][0.11\textheight][c]{\linewidth}{ 
+	% Box to hold your name and CV title; change the fixed height as needed to
+	% match the colored box to the right
+	\centering % Horizontally center text
+	% Your name
+	{\Huge\textcolor{headings}{Curriculum Vitae}} 
+
+	% AB-line
+	\par\noindent\rule{6cm}{0.4pt}
+	\medskip 
+
+	% Vertical whitespace
+	{\sffamily\Large{Steven Marcel Bißantz}}
+	%{\cursivefont\Huge\textcolor{headings}{Curriculum Vitae}}
+	
+	\vfill % Push content to the top of the box
+}
+
+\switchcolumn % Switch to the second (right) column
+
+%------------------------------------------------------------------------------
+%	COLORED CONTACT DETAILS BOX
+%------------------------------------------------------------------------------
+
+\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+	\colorbox{shade}{ % Create colored box and specify background color
+		% Start a table with two columns, the table will ensure everything is
+		% aligned
+		\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}}
+			\raisebox{-1pt}{\faHome} & Nordparkstraße 10b, 76829 Landau \\ % Address
+			\raisebox{-1pt}{\faPhone} & +49 1525 3606062\\ % Phone number
+			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:bissantz@uni-landau.de}{bissantz@uni-landau.de} \\ % Email address
+			\raisebox{-1pt}{\small\faGithub} & \href{https://github.com/sbissantz}{https://github.com/sbissantz} \\ % Website
+			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the Fonts folder for all icons you can use
+		\end{supertabular}
+	}
+	\vfill % Push content to the top of the box
+}
+
+%------------------------------------------------------------------------------
+%	COLORED CONTACT DETAILS BOX
+%------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the second (right) column
+
+\color{headings} %Rote Farbe aus den Überschriften im Lebenslauf
+\vspace{2cm} % Extra whitespace before the next section
+\underline{\textbf{\footnotesize{Steven Bißantz $\cdot$ Nordparkstraße 10b $\cdot$ 76829 Landau}}}
+
+\color{text}
+\bigskip
+\begin{leftbar}
+Prof. Dr. Michaela Maier \newline
+Fortstraße 7; K 5.26  \newline
+76829 Landau 
+\end{leftbar}
+
+\switchcolumn
+
+\vspace{5cm}
+\begin{flushright}
+Landau, \today
+\end{flushright}
+\end{paracol} % End two-column mode
+
+\vspace{1cm}
+\section*{My Motivation to become a SMiP-Associate}
+\bigskip
+Sehr geehrte Frau Prof. Dr. Maier, 
+\medskip
+
+%\renewcommand{\baselinestretch}{1.4}\normalsize
+
+\onehalfspacing
+
+\enquote{Most published research is false!}, John Ioannidis stated in 2005.
+Meanwhile, luminaries like Brian Nosek suggest that one driving force towards
+improving science could be a profound statistical (re-)education. SMiP fosters
+this cultural transformation. The program stands right in the middle, providing
+(a) a coherent research network, (b) a cognitively stimulating environment,
+and, most importantly, the proficient staff to guide the next generation of
+research aspirants. I want to be part of it. Why? Because I want to develop at
+my own best. The structured Ph.D. program will help me to do so. For example,
+the \enquote{foundations} will aid in developing essential soft and hard skills
+for my scientific career, like proficiency in scientific writing and in-depth
+know-how on quantitative methods. The \enquote{extensions} will put the
+finishing touch on my methodological training. However, they will also allow me
+to sharpen my profile, which I'll explain next. 
+
+\subsection{Metascience $\cdot$ Quantitative Methoden $\cdot$ Datenwissenschaften}
+
+\paragraph{Metascience}
+
+Thinking outside the box has always been prior for me. So despite the main
+scope of my schedule, like social psychology (emphasis: stereotypes, racism &
+discrimination) and empirical research methods (emphasis: multivariate analysis
+methods), I attended additional courses in philosophy (emphasis: logic \&
+philosophy of science). The cross-disciplinary toolkit now intertwines with my
+doctoral studies on metascience. In October 2021, Prof. Dr. Eunike Wetzel
+recruited me for her team in the DFG Priority Program META-REP *LINK*. Now, I
+do meta-research at her lab on the role of measurement in the replicability of
+empirical findings. Next summer, for example, we will conduct a
+cross-disciplinary, multisample replication project. Combining it with an
+experiment on the influence of measurement on replicability and effect size
+heterogeneity abstracts one of our three projects. My team member, Caroline
+Boehm, told me that Prof. Dr. Beatrice Kuhlmann is also passionate about
+metascience. She might be interested in becoming my secondary supervisor.
+
+\paragraph{Quantitative Methods}
+
+As an undergraduate student, I became passionate about quantitative methods.
+Besides introductory courses on data collection, descriptive statistics, and
+multivariate analysis, I acquired advanced skills in self-studies. For example,
+I trained myself in Bayesian Data Analysis and started lately with
+probabilistic machine learning. My methodological skill set did pay off in 2020
+during my research internship at the Center for (\textsc{zepf}). Dr. Inga
+Wagner invited me to join her team, elucidating mode effects in comparative
+studies (VERA). Our efforts finally led to an article we could publish in the
+European Journal of Psychology of Education in 2021. All SMiP courses offered
+will support me going forward in my modeling. But as a committed Bayesian, I am
+curious about working with Prof. Dr. Jeffrey N. Rouder. He might also be
+interested in becoming my third supervisor.
+
+\paragraph{Computer Science}
+
+Data science In Mannheim, I first enthusiastically learned how to use SPSS and
+Stata; in the meantime, however, more complex estimation and data problems in
+my work at the zepf also require the experienced use of the statistical
+software R (e.g., in dealing with multilevel models). Furthermore, I already
+learned to program in this language in Bamberg. An interesting project in this
+context was the development of elisr. "Exploratory Likert Scaling in R" is an
+R package for exploratory dimensional analysis in the social sciences, which I
+was recently able to publish on CRAN. In my master's thesis ("Exploratory
+Dimensionality Analysis in the Social Sciences"), I am currently investigating
+the advantages of this method in finding latent variables in complex data sets
+(e.g., in comparison with exploratory factor analysis)
+
+
+for your interest in a structured Ph.D. program at the Research Training Group
+SMiP. Elaborate on your study plans and your research interests. It is very
+important to show that your research interests meet closely with the current
+research of the respective  faculty member(s) you would be interested in
+working with.The motivation letter should be in English and not exceed two
+pages (not more than 700 words).
+
+
+%------------------------------------------------------------------------------
+% Signature
+%------------------------------------------------------------------------------
+\vfill
+\begin{tabular}{p{8cm}p{.5cm}l}
+\dotfill \\ 
+\centering{Steven Bißantz} 
+\end{tabular}% 
+\vfill
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
