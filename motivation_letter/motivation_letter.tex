@@ -11,7 +11,7 @@
 %------------------------------------------------------------------------------
 % Preamble
 %------------------------------------------------------------------------------
-\documentclass[10pt]{FreemanML}
+\documentclass[11pt]{FreemanML}
 
 % Widths of the two columns, specified here as a ratio summing to 1 to
 % correspond to percentages; adjust as needed for your content 
@@ -27,11 +27,13 @@
 % Headers and footers can be added with the following commands: \lhead{},
 % \rhead{}, \lfoot{} and \rfoot{}
 
-\lfoot{\footnotesize{The \LaTeX code to reproduce the CV and a free PDF Version is available at: \url{https://github.com/sbissantz/smip_application/curriculum_vitae}.}}
+\lfoot{\footnotesize{The \LaTeX code to reproduce the motivation letter is available at: \url{https://github.com/sbissantz/smip_application}.}}
 
 %------------------------------------------------------------------------------
 
 \begin{document}
+
+\thispagestyle{empty}
 
 \begin{paracol}{2} % Begin two-column mode
 
@@ -44,7 +46,7 @@
 	% match the colored box to the right
 	\centering % Horizontally center text
 	% Your name
-	{\Huge\textcolor{headings}{Curriculum Vitae}} 
+	{\Huge\textcolor{headings}{Letter of Motivation}} 
 
 	% AB-line
 	\par\noindent\rule{6cm}{0.4pt}
@@ -72,7 +74,6 @@
 			\raisebox{-1pt}{\faPhone} & +49 1525 3606062\\ % Phone number
 			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:bissantz@uni-landau.de}{bissantz@uni-landau.de} \\ % Email address
 			\raisebox{-1pt}{\small\faGithub} & \href{https://github.com/sbissantz}{https://github.com/sbissantz} \\ % Website
-			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
 			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
 			% See fontawesome.pdf in the Fonts folder for all icons you can use
 		\end{supertabular}
@@ -93,9 +94,10 @@
 \color{text}
 \bigskip
 \begin{leftbar}
-Prof. Dr. Michaela Maier \newline
-Fortstraße 7; K 5.26  \newline
-76829 Landau 
+University of Mannheim \newline
+Research Training Group SMiP \newline
+B6, 30-32 \newline
+D-68159 Mannheim
 \end{leftbar}
 
 \switchcolumn
@@ -109,28 +111,31 @@ Landau, \today
 \vspace{1cm}
 \section*{My Motivation to become a SMiP-Associate}
 \bigskip
-Sehr geehrte Frau Prof. Dr. Maier, 
-\medskip
-
-%\renewcommand{\baselinestretch}{1.4}\normalsize
+Dear members of the selection committee,
+\smallskip
 
 \onehalfspacing
 
-\enquote{Most published research is false!}, John Ioannidis stated in 2005.
+\paragraph{Most published research is false!} John Ioannidis stated in 2005.
 Meanwhile, luminaries like Brian Nosek suggest that one driving force towards
 improving science could be a profound statistical (re-)education. SMiP fosters
 this cultural transformation. The program stands right in the middle, providing
 (a) a coherent research network, (b) a cognitively stimulating environment,
 and, most importantly, the proficient staff to guide the next generation of
 research aspirants. I want to be part of it. Why? Because I want to develop at
-my own best. The structured Ph.D. program will help me to do so. For example,
-the \enquote{foundations} will aid in developing essential soft and hard skills
-for my scientific career, like proficiency in scientific writing and in-depth
-know-how on quantitative methods. The \enquote{extensions} will put the
-finishing touch on my methodological training. However, they will also allow me
-to sharpen my profile, which I'll explain next. 
+my own best. A structured Ph.D. program will help me to do so. For example,
+SMiP's \enquote{foundations} will aid in developing essential soft and hard
+skills for my scientific career, like proficiency in scientific writing and
+in-depth know-how on quantitative methods. The \enquote{extensions} will put
+the finishing touch on my methodological training. However, they will also
+allow me to sharpen my profile, which I'll explain next. 
 
-% \subsection{Metascience $\cdot$ Quantitative Methoden $\cdot$ Datenwissenschaften}
+\begin{color}{headings}
+	\begin{center}
+		Metascience $\cdot$ Quantitative Methods $\cdot$ Computer Science
+	\end{center}
+\end{color}
+\vspace{-0.4cm}
 
 \paragraph{Metascience}
 
@@ -140,14 +145,14 @@ discrimination) and empirical research methods (emphasis: multivariate analysis
 methods), I attended additional courses in philosophy (emphasis: logic \&
 philosophy of science). The cross-disciplinary toolkit now intertwines with my
 doctoral studies on metascience. In October 2021, Prof. Dr. Eunike Wetzel
-recruited me for her team in the DFG Priority Program META-REP *LINK*. Now, I
-do meta-research at her lab on the role of measurement in the replicability of
+recruited me for her team in the DFG Priority Program META-REP *LINK*. I do
+meta-research at her lab on the role of measurement in the replicability of
 empirical findings. Next summer, for example, we will conduct a
 cross-disciplinary, multisample replication project. Combining it with an
 experiment on the influence of measurement on replicability and effect size
 heterogeneity abstracts one of our three projects. My team member, Caroline
-Boehm, told me that Prof. Dr. Beatrice Kuhlmann is also passionate about
-metascience. She might be interested in becoming my secondary supervisor.
+Boehm, told me that Prof. Dr. Beatrice Kuhlmann is also a vibrant meta
+scientist. She might be interested in becoming my secondary supervisor.
 
 \paragraph{Quantitative Methods}
 
@@ -158,38 +163,35 @@ I trained myself in Bayesian Data Analysis and started lately with
 probabilistic machine learning. My methodological skill set did pay off in 2020
 during my research internship at the Center for (\textsc{zepf}). Dr. Inga
 Wagner invited me to join her team, elucidating mode effects in comparative
-studies (VERA). Our efforts finally led to an article we could publish in the
-European Journal of Psychology of Education in 2021. All SMiP courses offered
+studies (\textsc{vera}). Our efforts finally led to an article we could publish in the
+European Journal of Psychology of Education in 2021. All offered SMiP courses
 will support me going forward in my modeling. But as a committed Bayesian, I am
 curious about working with Prof. Dr. Jeffrey N. Rouder. He might also be
 interested in becoming my third supervisor.
 
 \paragraph{Computer Science}
 
-Data science In Mannheim, I first enthusiastically learned how to use SPSS and
-Stata; in the meantime, however, more complex estimation and data problems in
-my work at the zepf also require the experienced use of the statistical
-software R (e.g., in dealing with multilevel models). Furthermore, I already
-learned to program in this language in Bamberg. An interesting project in this
-context was the development of elisr. "Exploratory Likert Scaling in R" is an
-R package for exploratory dimensional analysis in the social sciences, which I
-was recently able to publish on CRAN. In my master's thesis ("Exploratory
-Dimensionality Analysis in the Social Sciences"), I am currently investigating
-the advantages of this method in finding latent variables in complex data sets
-(e.g., in comparison with exploratory factor analysis)
-
-
-for your interest in a structured Ph.D. program at the Research Training Group
-SMiP. Elaborate on your study plans and your research interests. It is very
-important to show that your research interests meet closely with the current
-research of the respective  faculty member(s) you would be interested in
-working with.The motivation letter should be in English and not exceed two
-pages (not more than 700 words).
-
+Developing computer skills have ever played an essential role in my life. Going
+fully open-source switching to (fedora) Linux as an undergraduate is a good
+example. Acquiring coding skills is another. As a research assistant at the
+Centre of Educational Research (\textsc{zepf}), I started R programming. It
+became the kickoff for developing \textit{elisr}.\enquote{Exploratory Likert
+Scaling} is an R package for exploratory dimensional analysis in the social
+sciences, recently published on CRAN. But starting my Ph.D., I wanted to go
+further. I have lately put my hands on the probabilistic programming language,
+Stan, to gain flexibility in statistical modeling. The goal is to employ it as
+the go-to analysis tool throughout my Ph.D. As far as I know, SMiP does not yet
+offer programming courses in Stan. But this could be a superb chance for
+contribution. Feeding first-hand information into the network,  preparing a
+Stan webinar, for example, might be a place for me to start. Besides, I am
+fascinated with Git. Having back-and-forths about version control at SMiP can
+foster open-science/code/source practices and might be a sound argument for
+having me.
 
 %------------------------------------------------------------------------------
 % Signature
 %------------------------------------------------------------------------------
+
 \vfill
 \begin{tabular}{p{8cm}p{.5cm}l}
 \dotfill \\ 
