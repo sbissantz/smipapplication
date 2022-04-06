@@ -9,21 +9,9 @@ the desired files.
 
 | File | PDF | Code |
 | ------ | ----------- |
-| Curriculum Vitae |
-[https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.pdf](x)
-|
-[https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.tex](x)
-|
-| Letter of Motivation |
-[https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.pdf](x)
-| 
-[https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.tex](x)
-|
-| Writing Sample |
-[https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.pdf](x)
-|
-[https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.tex](x)
-|
+| Curriculum Vitae | [https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.pdf](x) | [https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.tex](x) | 
+| Letter of Motivation | [https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.pdf](x) | [https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.tex](x) | 
+| Writing Sample | [https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.pdf](x) | [https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.tex](x) |
 
 
 
