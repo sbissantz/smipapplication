@@ -52,9 +52,9 @@
 	% Bottom margin
 	bottom=1.75cm,
 	% Left margin
-	left=2cm,
+	left=2.5cm,
 	% Right margin
-	right=2cm,
+	right=2.5cm,
 	% Space from the bottom margin to the baseline of the footer
 	footskip=1cm, 
 	% Space from the top margin to the baseline of the header
