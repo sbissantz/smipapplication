@@ -3,8 +3,8 @@
 Welcome to my repository! Glad you made it. The repository structure is simple.
 I submitted three documents to SMiP written in TeX: 
 
-1. CV (`curriculum_vitae`),
-2. LOM (`motivation_letter`)
+1. Curriculum Vitae (`curriculum_vitae`),
+2. Letter of Motivation (`motivation_letter`)
 3. Writing sample (`writing_sample`)
 
 The repository contains all the necessary code to reproduce these files. Within
