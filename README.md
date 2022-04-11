@@ -1,11 +1,12 @@
 # smip_application
 
 Welcome to my repository! Glad to have you here. The repository structure is
-simple. I submitted three documents to SMiP written in TeX: 
+simple. I submitted four documents to SMiP written in TeX: 
 
-1. Curriculum Vitae (`curriculum_vitae`)
-2. Letter of Motivation (`motivation_letter`)
-3. Writing sample (`writing_sample`)
+1. Attachments (`attachments`)
+2. Curriculum Vitae (`curriculum_vitae`)
+3. Letter of Motivation (`motivation_letter`)
+4. Writing sample (`writing_sample`)
 
 The repository contains all the necessary code to reproduce these files. Within
 the directory, you find the code to duplicate each particular file. Feel free
@@ -19,6 +20,7 @@ To save you some time, I linked the PDF versions and the TeX code:
 
 | File | PDF Version | TeX Version
 | ------ | ----------- | ----------- |
+| Attachment List | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/attachment_list/attachment_list.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/attachment_list/attachment_list.tex) |
 | Curriculum Vitae | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.tex) |
 | Letter of Motivation | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.tex)|
 Writing Sample | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.tex) |
