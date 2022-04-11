@@ -3,13 +3,13 @@
 Welcome to my repository! Glad to have you here. The repository structure is
 simple. I submitted four documents to SMiP written in TeX: 
 
-1. Attachments (`attachments`)
+1. Attachment List (`attachment_list`)
 2. Curriculum Vitae (`curriculum_vitae`)
 3. Letter of Motivation (`motivation_letter`)
-4. Writing sample (`writing_sample`)
+4. Writing Sample (`writing_sample`)
 
 The repository contains all the necessary code to reproduce these files. Within
-the directory, you find the code to duplicate each particular file. Feel free
+the directory, you find the code to compile each particular file. Feel free
 to clone the repository and contribute. Using `XeLaTeX`, you shouldn't run into
 compiling issues. But if you face any problems, please let me know. Just open
 an issue ([here](https://github.com/issues)) and report the problem. 
