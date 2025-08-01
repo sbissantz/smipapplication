@@ -1,4 +1,4 @@
-# smip_application
+# smipapplication
 
 Welcome to my repository! Glad to have you here. The repository structure is
 simple. I submitted four documents to SMiP written in TeX: 
